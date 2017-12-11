@@ -34,12 +34,12 @@ The raw data can be found at
 ### Step 1: Merge the training and test sets to create one data set
 Test sets:
 * <code>X_test.txt</code>
-* <code>y_test.txt></code>
+* <code>y_test.txt</code>
 * <code>subject_test.txt</code>
 
 Training sets: 
 * <code>X_train.txt</code>
-* <code>y_train.txt></code>
+* <code>y_train.txt</code>
 * <code>subject_train.txt</code>
 
 #### Procedure:
@@ -49,11 +49,10 @@ Training sets:
 3. Merge the merged test and training sets using <code>rbind()</code>, which
 results in one merged data set. 
 
-### Step 2: Extract only the measurements on the mean and standard deviation for 
-each measurement
+### Step 2: Extract only the measurements on the mean and standard deviation for each measurement
 Before I could subset on the mean and standard deviation, I had to add column 
 names, such that I could find the relevant columns. The column names can be found
-in <code>features.txt</code>
+in <code>features.txt</code>.
 
 #### Procedure: 
 1. Load features from <code>features.txt</code> using <code>read.table()</code>
@@ -74,8 +73,7 @@ in <code>features.txt</code>
 3. Replace variable names using <code>sub</code> and <code>gsub</code>, e.g.
 "Gyro" to "Gyroscope"
 
-### Step 5: From the data set in Step 4, create a second, independent tidy data 
-set with the average of each variable for each activity and each subject
+### Step 5: From the data set in Step 4, create a second, independent tidy data set with the average of each variable for each activity and each subject
 
 #### Procedure:
 1. Load the <code>dplyr</code> package using <code>library()</code>
@@ -87,12 +85,10 @@ subject-activity pair using <code>summerize_all</code>
 ## Calculated variables
 Can be found in <code>tidydata.txt</code> 
 
-* subject 
-Can take a number between 1 and 30 
+* subject (can take a number between 1 and 30)
 
-* activity 
-Can take the values: LAYING, SITTING, STANDING, WALKING, WALKING_DOWNSTAIRS and
-WALKING_UPSTAIRS 
+* activity (can take the values: LAYING, SITTING, STANDING, WALKING, 
+WALKING_DOWNSTAIRS and WALKING_UPSTAIRS)
 
 * timeBodyAccelerometer.mean.X
 * timeBodyAccelerometer.mean.Y
