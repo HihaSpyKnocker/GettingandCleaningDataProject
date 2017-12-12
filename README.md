@@ -38,8 +38,8 @@ variable for each activity and each subject.
 ### Prerequisites
 * Download the [Human Activity Recognition Using Smartphones Data Set] 
 (https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
-data set in your working directory, like "./data/UCI HAR Dataset
-* Download the <code>run_analysis.R</code>
+in your working directory, like "./data/UCI HAR Dataset
+* Download <code>run_analysis.R</code>
 
 ### Using the files
 Two ways: 
