@@ -70,7 +70,7 @@ in <code>features.txt</code>.
 #### Procedure: 
 1. Replace special values: i.e. "-" into "."
 2. Remove special values: i.e. "()"
-3. Replace variable names using <code>sub</code> and <code>gsub</code>, e.g.
+3. Replace variable names using <code>sub()</code> and <code>gsub()</code>, e.g.
 "Gyro" to "Gyroscope"
 
 ### Step 5: From the data set in Step 4, create a second, independent tidy data set with the average of each variable for each activity and each subject
@@ -79,7 +79,7 @@ in <code>features.txt</code>.
 1. Load the <code>dplyr</code> package using <code>library()</code>
 2. Group by subject and activity using <code>group_by()</code>
 3. Average the columns by group with only one observation for each 
-subject-activity pair using <code>summerize_all</code>
+subject-activity pair using <code>summerize_all()</code>
 4. Write table to <code>tidydata.txt</code>
 
 ## Calculated variables
