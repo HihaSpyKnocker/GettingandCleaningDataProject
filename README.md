@@ -12,7 +12,7 @@ The raw data can be found at
 
 ### CodeBook.md
 Documentation describing the variables, the data and any transformations or work 
-that you performed to clean up.
+that I performed to clean up.
 
 ### README.md 
 Documentation explaining the project and how to use files contained in the 
@@ -28,6 +28,9 @@ measurement
 4. Appropriately labels the data set with descriptive variable names
 5. From the data set in step 4, creates a second, independent tidy data set with 
 the average of each variable for each activity and each subject 
+
+A more detailed description of the analysis can be found in the transformation
+section of the <code>CodeBook.md</code>.
 
 ### tidydata.txt
 A text file containing the tidy data, i.e. data with the average of each 
